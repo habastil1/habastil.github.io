@@ -1,0 +1,219 @@
+/* Start MAin Rules */
+
+:root
+{
+    --main-color: #1da1f2;
+    --text-color: #68737b
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6ecf0
+}
+
+.container
+{
+    margin: auto
+}
+
+.text-center
+{
+    text-align: center
+}
+
+.d-flex
+{
+    display: -webkit-flex;
+    display: flex
+}
+
+a{text-decoration: none; color:inherit}
+
+/* End MAin Rules */
+
+
+
+/* Start Header */
+
+header
+{
+    background-color: #FFF;
+    color:var(--text-color);
+    border-bottom: 1px solid #d8d8d8;
+    box-shadow: 1px -7px 7px 7px #b1b1b1;
+    margin-bottom: 50px
+}
+
+header .d-flex
+{
+    justify-content: space-between
+}
+
+header h1
+{
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 23px
+}
+
+
+header ul li
+{
+    display: inline-block;
+    padding: 15px 15px;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+header ul li:hover
+{
+    color: var(--main-color);
+    border-bottom: 3px solid;
+    border-bottom-color: var(--main-color)
+}
+
+
+/* End Header */
+
+
+
+
+/* Start Login Form */
+
+.login
+{
+    width: 90%;
+    background-color: #FFF;
+    color: var(--text-color);
+    padding: 50px 100px;
+    margin: auto;
+    box-shadow: 1px 12px 11px 2px #dcdcdc;
+}
+
+.login h2
+{
+    color: var(--main-color)
+}
+
+.login form input
+{
+    display: block;
+    width: 450px;
+    padding: 10px;
+    margin: 20px 0 9px;
+    outline: none;
+    border: 1px solid #e4e4e4 
+}
+
+input::-webkit-input-placeholder 
+{
+    color: var(--text-color);    
+}
+
+input:focus::-webkit-input-placeholder 
+{
+    color: var(--text-color);
+    opacity: .5;
+}
+
+input:focus
+{
+    border: 1px solid rgba(0,132,180,0.5) !important
+}
+
+.login >a
+{
+    text-decoration: underline;
+}
+
+.login .submit button
+{
+    background-color: var(--main-color);
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 30px 10px 0 0;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.login span a
+{
+    color: var(--main-color)
+}
+
+.login span a:hover
+{
+    text-decoration: underline
+}
+
+/* End Login Form */
+
+
+
+/* Start Media Queries */
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) 
+{ 
+    .container
+    {
+        width: 550px
+    }
+
+    .login
+    {
+        width: 550px !important
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) 
+{ 
+    .container
+    {
+        width: 750px
+    }
+
+    .login
+    {
+        width: 750px !important
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) 
+{ 
+    .container
+    {
+        width: 900px
+    }
+
+    .login
+    {
+        width: 900px !important
+    }
+}
+
+
+
+
+/* End Media Queries */
